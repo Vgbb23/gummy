@@ -155,7 +155,7 @@ const Header = ({
 const Hero = () => (
   <section className="relative overflow-hidden">
     <img 
-      src="https://i.ibb.co/TxgxjS56/image.png" 
+      src="https://i.ibb.co/hFySFjdb/image.png" 
       alt="Mês do Consumidor Gummy Original" 
       className="w-full h-auto block"
       referrerPolicy="no-referrer"
@@ -252,12 +252,14 @@ const InfluencerCarousel = () => (
         { 
           name: '@anny_ferreira10', 
           product: 'Gummy Hair® ZERO', 
-          video: 'https://res.cloudinary.com/dpcxlsbwd/video/upload/v1774221619/2e512182a3354cb9a2cb8b4f94a78ad4.SD-480p-0.9Mbps-45007457_bhq6x6.mp4' 
+          video: 'https://res.cloudinary.com/dg1tim1ve/video/upload/v1778214905/Gummy___a_marca_refer%C3%AAncia_em_vitaminas_em_goma-1_whei2w.mp4',
+          avatar: 'https://i.ibb.co/5XTyMjVg/image.png'
         },
         { 
           name: '@dudaa.guerra', 
           product: 'Gummy® Vinagre', 
-          video: 'https://res.cloudinary.com/dpcxlsbwd/video/upload/v1774221620/a7980c301ae8498dbe0f3cde021384ff.HD-720p-1.6Mbps-26527005_u82ztv.mp4' 
+          video: 'https://res.cloudinary.com/dg1tim1ve/video/upload/v1778214905/Gummy___a_marca_refer%C3%AAncia_em_vitaminas_em_goma-1_whei2w.mp4',
+          avatar: 'https://i.ibb.co/Lmn6J4m/image.png'
         },
       ].map((item, i) => (
         <div key={i} className="w-[48%] flex flex-col gap-3">
@@ -273,7 +275,7 @@ const InfluencerCarousel = () => (
             <div className="absolute inset-0 bg-black/5 pointer-events-none" />
           </div>
           <div className="flex items-center gap-2 px-1">
-            <img src="https://picsum.photos/seed/prod-small/100/100" className="w-8 h-8 rounded-full object-contain bg-white p-1" referrerPolicy="no-referrer" />
+            <img src={item.avatar} className="w-8 h-8 rounded-full object-contain bg-white p-1" referrerPolicy="no-referrer" />
             <div className="flex flex-col overflow-hidden">
               <span className="text-[10px] font-black text-slate-800 truncate">{item.name}</span>
               <span className="text-[8px] text-slate-500 font-medium truncate">{item.product}</span>
